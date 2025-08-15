@@ -9,8 +9,17 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
+@EqualsAndHashCode(callSuper = true)
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 public class UpdateCorrespondenceClientRequest extends BaseAdminRequest {
+
     @JsonIgnore
     @NotBlank(message = "Missing Mandatory Field: {configurationId}")
     @Size(max = 64, message = "Invalid Field Length: {configurationId}")

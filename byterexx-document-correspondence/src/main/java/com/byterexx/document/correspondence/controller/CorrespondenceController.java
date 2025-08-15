@@ -33,7 +33,7 @@ public class CorrespondenceController {
         request.setApplicationName(applicationName);
         request.setId(id);
         request.setClientCertName(clientCertName);
-        CreateCorrespondenceResponse response = correspondenceServiceFactory.service(CorrespondenceService.CREATE_CORRESPONDENCE, null);
+        CreateCorrespondenceResponse response =  correspondenceServiceFactory.service(CorrespondenceService.CREATE_CORRESPONDENCE, request, null);
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 

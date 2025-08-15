@@ -17,7 +17,6 @@ import java.util.Map;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-
 public class CreateCorrespondenceRequest extends BaseRequest {
     @JsonIgnore
     @NotBlank(message = "Missing Mandatory Field: {id}")

@@ -4,7 +4,13 @@ import com.byterexx.document.correspondence.vo.BaseRequest;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 public class GetCorrespondenceRequest extends BaseRequest {
 
     @JsonIgnore

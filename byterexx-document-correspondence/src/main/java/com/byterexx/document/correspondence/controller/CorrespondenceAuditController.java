@@ -1,8 +1,8 @@
 package com.byterexx.document.correspondence.controller;
 
 
-import com.byterexx.document.correspondence.service.impl.CorrespondenceService;
-import com.byterexx.document.correspondence.service.impl.CorrespondenceServiceFactory;
+import com.byterexx.document.correspondence.service.CorrespondenceService;
+import com.byterexx.document.correspondence.service.CorrespondenceServiceFactory;
 import com.byterexx.document.correspondence.vo.audit.GetAuditRequest;
 import com.byterexx.document.correspondence.vo.audit.GetAuditResponse;
 import jakarta.websocket.server.PathParam;
