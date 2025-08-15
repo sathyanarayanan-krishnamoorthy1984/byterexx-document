@@ -1,7 +1,11 @@
 package com.byterexx.document.correspondence.exception;
 
 import com.byterexx.document.common.exception.ErrorCode;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 public enum CorrespondenceErrorCode implements ErrorCode {
     INVALID_MIME_TYPE("NOTIFY0001", "Invalid Field Value : {mimeType}",  400),
     DUPLICATE_CLIENT_NAME( "NOTIFY0002",  "Duplicate Client Name",  400),
@@ -35,47 +39,14 @@ public enum CorrespondenceErrorCode implements ErrorCode {
 
     /**
      * The http response code.
+     * -- GETTER --
+     *  Gets the http response code.
+     *
+     * @return the http response code
+
      */
     private int httpResponseCode;
 
-    public String getResponseCode() {
-        return responseCode;
-    }
-
-    public void setResponseCode(String responseCode) {
-        this.responseCode = responseCode;
-    }
-
-    public String getResponseMessage() {
-        return responseMessage;
-    }
-
-    /**
-     * Sets the error message.
-     *
-     * @param responseMessage the new error message
-     */
-    public void setResponseMessage(String responseMessage) {
-        this.responseMessage = responseMessage;
-    }
-
-    /**
-     * Gets the http response code.
-     *
-     * @return the http response code
-     */
-    public int getHttpResponseCode() {
-        return httpResponseCode;
-    }
-
-    /**
-     * Sets the http response code.
-     *
-     * @param httpResponseCode the new http response code
-     */
-    public void setHttpResponseCode(int httpResponseCode) {
-        this.httpResponseCode = httpResponseCode;
-    }
 
     /**
      * To error string.
