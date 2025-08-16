@@ -15,6 +15,7 @@
         <module>byterexx-document-correspondence</module>
         <module>byterexx-document-correspondence</module>
         <module>byterexx-document-customer-access</module>
+        <module>byterexx-document-customer-product-service</module>
     </modules>
 
     <properties>
