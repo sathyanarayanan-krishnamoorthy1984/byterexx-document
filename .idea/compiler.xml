@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Annotation profile for byterexx-document" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
+        </processorPath>
+        <module name="byterexx-document-content" />
+        <module name="byterexx-document-common" />
+        <module name="byterexx-document-report" />
+        <module name="byterexx-document-customer-access" />
+        <module name="byterexx-document-party-authentication" />
+        <module name="byterexx-document-document" />
+        <module name="byterexx-document-security" />
+        <module name="byterexx-document-cloud" />
+        <module name="byterexx-document-customer-product-service" />
+      </profile>
+      <profile name="Annotation profile for byterexx-document-correspondence" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
+        </processorPath>
+        <module name="byterexx-document-correspondence" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="byterexx-document" options="-parameters" />
+      <module name="byterexx-document-cloud" options="-parameters" />
+      <module name="byterexx-document-common" options="-parameters" />
+      <module name="byterexx-document-content" options="-parameters" />
+      <module name="byterexx-document-correspondence" options="-parameters" />
+      <module name="byterexx-document-customer-access" options="-parameters" />
+      <module name="byterexx-document-customer-product-service" options="-parameters" />
+      <module name="byterexx-document-document" options="-parameters" />
+      <module name="byterexx-document-party-authentication" options="-parameters" />
+      <module name="byterexx-document-report" options="-parameters" />
+      <module name="byterexx-document-security" options="-parameters" />
+    </option>
+  </component>
+</project>
