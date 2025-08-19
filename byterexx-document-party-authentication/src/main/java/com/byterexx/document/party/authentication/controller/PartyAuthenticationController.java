@@ -1,5 +1,6 @@
-package com.byterexx.document.correspondence.controller;
+package com.byterexx.document.party.authentication.controller;
 
+import com.byterexx.document.party.authentication.vo.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

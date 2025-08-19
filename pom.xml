@@ -17,6 +17,9 @@
         <module>byterexx-document-customer-access</module>
         <module>byterexx-document-customer-product-service</module>
         <module>byterexx-document-document</module>
+        <module>byterexx-document-security</module>
+        <module>byterexx-document-report</module>
+        <module>byterexx-document-party-authentication</module>
     </modules>
 
     <properties>
